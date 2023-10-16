@@ -9,9 +9,7 @@ import os
 
 db = SQLAlchemy()
 
-# MOVIE_API_KEY = '254ffe55e7f2f2e23012b69189e86b28'
 MOVIE_API_KEY = os.environ.get('MOVIE_API_KEY')
-# ACCESS_TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyNTRmZmU1NWU3ZjJmMmUyMzAxMmI2OTE4OWU4NmIyOCIsInN1YiI6IjY0ZjcxZWE4NWYyYjhkMDBlMTJkNDdiOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.V1mz9VC8dLZ8JnLp_u3L9mhKIYkARJLrINhtOwegamo'
 ACCESS_TOKEN = os.environ.get('ACCESS_TOKEN')
 headers = {
     "accept": "application/json",
